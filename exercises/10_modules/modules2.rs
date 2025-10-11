@@ -6,6 +6,11 @@ mod delicious_snacks {
     // use self::fruits::PEAR as ???;
     // use self::veggies::CUCUMBER as ???;
 
+    use self::fruits::PEAR as PEAR;
+    use self::veggies::CUCUMBER as CUCUMBER;
+    pub const fruit: &str = PEAR;
+    pub const veggie: &str = CUCUMBER;
+
     mod fruits {
         pub const PEAR: &str = "Pear";
         pub const APPLE: &str = "Apple";
